@@ -1,4 +1,10 @@
 .logo-nav-bar {
     max-width: 100%;
     width: 25%;
+    margin-left: 10px;
+}
+
+.poke-gentleman {
+    max-width: 100%;
+    width: 100%;
 }
