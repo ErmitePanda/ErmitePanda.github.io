@@ -1,0 +1,11 @@
+nav {
+    background: #FFEB3A;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+/* Tout les enfants direct de la nav barre */
+nav > * {
+    display: inline;
+}
