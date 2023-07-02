@@ -1,7 +1,12 @@
 .logo-nav-bar {
     max-width: 100%;
-    width: 25%;
-    margin-left: 10px;
+    width: 20%;
+    margin-left: 30px;
+    transition: ease 0.3s;
+}
+
+.logo-nav-bar:hover {
+    transform: scale(1.2,1.2);
 }
 
 .poke-gentleman {
