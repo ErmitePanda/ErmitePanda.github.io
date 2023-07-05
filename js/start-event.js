@@ -8,7 +8,7 @@ const textUser = document.querySelector(".text-user")
 let compteur = 0
 
 function animationUtilisateur() {
-    compteur++;
+    compteur+=3;
 
     if (compteur >= nbUtilisateur) {
         // Arrêt de la boucle
@@ -21,19 +21,45 @@ function animationUtilisateur() {
 }
 
 /**
- *
+ * transition d'apparition dés l'arrivé sur la page
  */
 
 const boxUser = document.querySelector(".box-user")
 
-document.addEventListener("DOMContentLoaded", function () {
+/*document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
         boxUser.style.opacity = "1"
     }, 100)
-})
+})*/
+
+let start;
+let duration = 1000;
+const rectUserBox = boxUser.getBoundingClientRect()
+const posEndAnimeUserBox = rectUserBox.top - 200
+
+function animeUserPosition(tempsCourant) {
+    // temps de départ de lanimation (mili seconde tjr)
+    if (!start) start = tempsCourant;
+
+    const tempsEcoule = tempsCourant - start;
+    const progression = Math.min(tempsEcoule / duration, 1);
+    // Interpolation
+    const positionCourante = Math.round(rectUserBox.top + (posEndAnimeUserBox - rectUserBox.top) * progression);
+
+    // Application de la nouvelle position de l'élément
+    boxUser.style.transform = "translateY("+ positionCourante +"px)";
+    boxUser.style.opacity = "" + progression;
+
+    if (tempsEcoule < duration) {
+        // Animation pas terminer
+        requestAnimationFrame(animeUserPosition)
+    }
+}
 
 /**
  * MAIN
  */
 
 animationUtilisateur()
+// Démarre l'animation
+requestAnimationFrame(animeUserPosition)
