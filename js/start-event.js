@@ -8,7 +8,7 @@ const textUser = document.querySelector(".text-user")
 let compteur = 0
 
 function animationUtilisateur() {
-    compteur+=3;
+    compteur+=7;
 
     if (compteur >= nbUtilisateur) {
         // Arrêt de la boucle
@@ -26,23 +26,17 @@ function animationUtilisateur() {
 
 const boxUser = document.querySelector(".box-user")
 
-/*document.addEventListener("DOMContentLoaded", function () {
-    setTimeout(function () {
-        boxUser.style.opacity = "1"
-    }, 100)
-})*/
-
-let start;
-let duration = 1000;
+let startShowFrame;
+let duration = 700;
 const rectUserBox = boxUser.getBoundingClientRect()
 const posEndAnimeUserBox = rectUserBox.top - 200
 
 function animeUserPosition(tempsCourant) {
     // temps de départ de lanimation (mili seconde tjr)
-    if (!start) start = tempsCourant;
+    if (!startShowFrame) startShowFrame = tempsCourant;
 
-    const tempsEcoule = tempsCourant - start;
-    const progression = Math.min(tempsEcoule / duration, 1);
+    const tempsEcoule = tempsCourant - startShowFrame;
+    const progression = Math.min(tempsEcoule / duration, 0.8);
     // Interpolation
     const positionCourante = Math.round(rectUserBox.top + (posEndAnimeUserBox - rectUserBox.top) * progression);
 

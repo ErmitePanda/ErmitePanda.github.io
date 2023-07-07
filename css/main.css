@@ -21,7 +21,7 @@ p {
 * index.html
  */
 
-.box {
+.box-user {
     background-color: rgba(89,135,253,0.2);
     display: flex;
     flex-direction: column;
@@ -29,13 +29,14 @@ p {
     padding: 2% 5% 2% 5%;
     border-radius: 10px;
     row-gap: 80px;
-}
-
-.box-user {
-    /*transition: opacity 1.5s ease;*/
     opacity: 1;
 }
 
 .text-user {
-    font-size: 100px;
+    font-size: 80px;
+}
+
+.box-gentleman {
+    display: flex;
+    justify-content: center;
 }
