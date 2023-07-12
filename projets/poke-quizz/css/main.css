@@ -1,13 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    font-family: Arial, serif;
-}
-
 body {
-    background-image: url("/ressource/bck-image-acceuil.png");
+    background-image: url("/projets/poke-quizz/ressource/bck-image-acceuil.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -38,6 +30,7 @@ p {
     row-gap: 80px;
     margin: 0 0 200px 0;
     opacity: 0;
+    z-index: -1;
 }
 
 .text-user {
@@ -51,6 +44,6 @@ p {
 
 .box-quizz {
     background-color: white;
-    padding: 100px;
+    padding: 10px;
     opacity: 0;
 }

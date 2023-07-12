@@ -107,7 +107,7 @@ function initEvent() {
  * MAIN
  */
 
-animationUtilisateur()
+animationUtilisateur();
 // Démarre l'animation
-requestAnimationFrame(animeUserPosition)
-window.addEventListener('scroll', scrollInit)
+requestAnimationFrame(animeUserPosition);
+window.addEventListener('scroll', scrollInit);
