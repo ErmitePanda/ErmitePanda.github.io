@@ -5,7 +5,7 @@
 let nbUtilisateur = 1023
 let timeoutId;
 const textUser = document.querySelector(".text-user")
-let compteur = 0
+let compteur = 0;
 
 function animationUtilisateur() {
     compteur+=7;
