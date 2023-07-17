@@ -40,7 +40,7 @@ function endOfWelcome() {
     requestAnimationFrame(animeDisappearance);
 }
 
-activeWelcome = false;
+activeWelcome = true;
 
 if (activeWelcome) {
     startWelcome();
