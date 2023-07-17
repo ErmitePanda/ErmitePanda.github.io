@@ -5,3 +5,7 @@
     text-decoration: none;
     font-family: Arial, serif;
 }
+
+html, body {
+    height: 100%;
+}
