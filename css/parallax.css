@@ -1,0 +1,23 @@
+.parallax {
+    height: 400px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.poke-games {
+    background-image: url("../ressources/parallax-poke-game.png");
+}
+
+.bck-poke-games {
+    display: flex;
+    color: white;
+    justify-content: center;
+    background-color: rgba(255,0,0,0.3);
+    height: 100%;
+}
+
+.parallax h2 {
+    font-size: 50px;
+}
