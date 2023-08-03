@@ -1,50 +1,29 @@
-nav {
-    display: flex;
-    height: 100px;
-    align-items: center;
-    justify-content: space-between;
+header {
+    background-color: #9AC8EB;
 }
 
-.name {
+nav {
+    height: 110px;
     display: flex;
-    margin: 0 0 0 2%;
-    font-style: normal;
     align-items: center;
     justify-content: space-between;
-    width: 280px;
 }
 
 .link-nav {
     display: flex;
-    margin-right: 2%;
-    column-gap: 50px;
-    overflow: hidden;
+    column-gap: 94px;
+    margin: 0 76px 0 0;
 }
 
-.link-nav > div > a {
-    display: inline-block;
-    font-size: 20px;
+.link-nav a {
     position: relative;
+    font-size: 30px;
     color: black;
-    border-bottom: 2px solid transparent;
-    transition: border-width 0.3s;
 }
 
-.link-nav > div > a::before {
-    content: "";
-    position: absolute;
-    top: 100%;
-    width: 0;
-    transition: 0.3s all ease;
-    border-bottom: solid 2px black;
-}
-
-.link-nav > div > a:hover::before {
-    width: 100%;
-}
-
-.avatar {
-    width: 65px;
-    border-radius: 50%;
-    box-shadow: 1px 1px 3px black;
+.name-nav {
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0 0 0 30px;
 }

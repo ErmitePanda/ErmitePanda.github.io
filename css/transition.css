@@ -1,0 +1,60 @@
+/* Vérifier que les liens sont positionnés sinon
+ la transition échoue */
+
+.link a::before {
+    content: "";
+    position: absolute;
+    border-bottom: black 1px solid;
+    width: 0;
+    top: 100%;
+    transition: all ease 0.35s;
+}
+
+.link a:hover::before {
+    content: "";
+    width: 100%;
+}
+
+/* Penser à définir la hauteur du background sinon comme le contenue
+est vide, il apparaîtra pas */
+
+.button-reseaux::before {
+    content: "Follow me";
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+
+    background-color: #00CCFF;
+
+    /* Pour aligner le content dans le background */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Positionné le before en haut à gauche vu qu'il est absolute */
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    /* le before prends les dimenssions de son élément */
+
+    width: 100%;
+    height: 100%;
+
+    transition: 0.5s ease all;
+
+    z-index: 2;
+}
+
+/* Quand on survol le bouton, la position initial du before se déplace de
+ 100% de la hauteur de son élément */
+
+.button-reseaux:hover::before {
+    top: -100%;
+}
+
+.button-reseaux img:hover {
+    transform: translateY(-2px);
+}
