@@ -1,11 +1,16 @@
 /* Barre de scroll */
 
+:root {
+    --largeur-before: 0;
+}
+
 #scroll-progression {
     height: 8px;
     width: 100%;
     background-color: #D9D9D9;
     position: sticky;
     top: 0;
+    z-index: 3;
 }
 
 

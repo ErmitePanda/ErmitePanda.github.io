@@ -56,5 +56,5 @@ est vide, il apparaîtra pas */
 }
 
 .button-reseaux img:hover {
-    transform: translateY(-2px);
+    transform: translateY(-1px);
 }
