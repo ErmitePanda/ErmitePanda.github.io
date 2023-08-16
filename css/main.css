@@ -1,0 +1,137 @@
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 175px;
+}
+
+/*
+ ALL PARTS
+ */
+
+main > div {
+    margin: 205px 0 0 83px;
+}
+
+main > div > h2 {
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 2px solid black;
+    width: 1274px;
+    margin: 0 0 69px 0;
+}
+
+.style-text {
+    line-height: 65px;
+    font-size: 30px;
+}
+
+/* Introduction part */
+
+.introduction {
+    margin: 0 0 0 94px;
+    width: 658px;
+}
+
+/* About part */
+
+.about-part {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-bold {
+    font-weight: bold;
+    display: inline;
+}
+
+.about-text-iut {
+    width: 792px;
+}
+
+.container-iut {
+    overflow: hidden;
+    width: 750px;
+    margin-right: 46px;
+}
+
+.iutMS {
+    width: 750px;
+    height: 100%;
+    transform: scale(1.1);
+}
+
+.iut-part {
+    display: flex;
+    align-items: center;
+}
+
+/* Evenement */
+
+.about-text-event {
+    margin: 142px 0 0 0;
+    width: 1252px;
+}
+
+/* nuit informatique  */
+
+.nuit-info {
+    margin-top: 331px;
+    display: flex;
+    align-items: center;
+}
+
+.nuit-info > div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    width: 573px;
+    font-size: 30px;
+}
+
+.nuit-info a {
+    color: #5956FF;
+}
+
+.nuit-info-img {
+    width: 750px;
+    height: 100%;
+    margin-right: 189px;
+}
+
+/* cgj */
+
+.cgj {
+    margin-top: 331px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: 83px;
+    font-size: 30px;
+}
+
+.cgj > div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.cgj a {
+   color: #5956FF;
+}
+
+.container-cgj-img {
+    width: 750px;
+    overflow: hidden;
+    margin-left: 189px;
+}
+
+.cgj-img {
+    width: 500px;
+    height: 100%;
+    /* Pour cacher les bordures noirs de l'image */
+    transform: scale(1.01);
+}
+
+/* Work part */
+

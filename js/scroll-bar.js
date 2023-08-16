@@ -13,12 +13,11 @@ document.addEventListener('DOMContentLoaded', function () {
         if (hauteurPage - hauteurEcran === 0) {
             return 100;
         } else {
-            return Math.round((hauteurScroll / (hauteurPage - hauteurEcran)) * 100);
+            // return Math.round((hauteurScroll / (hauteurPage - hauteurEcran)) * 100);
+            // Plus fluide sans arondi
+            return (hauteurScroll / (hauteurPage - hauteurEcran)) * 100
         }
     }
-
-    console.log("coucou")
-    console.log(calcHauteurScroll())
 
     barProgress.style.setProperty('--largeur-before', calcHauteurScroll()+'%');
 
