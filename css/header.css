@@ -27,3 +27,20 @@ nav {
     font-style: italic;
     margin: 0 0 0 30px;
 }
+
+/* Vérifier que les liens sont positionnés sinon
+ la transition échoue */
+
+.link a::before {
+    content: "";
+    position: absolute;
+    border-bottom: black 1px solid;
+    width: 0;
+    top: 100%;
+    transition: all ease 0.35s;
+}
+
+.link a:hover::before {
+    content: "";
+    width: 100%;
+}

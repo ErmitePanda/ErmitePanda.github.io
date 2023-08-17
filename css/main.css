@@ -9,7 +9,7 @@ main {
  */
 
 main > div {
-    margin: 205px 0 0 83px;
+    margin: 205px 0 0 0px;
 }
 
 main > div > h2 {
@@ -34,6 +34,15 @@ main > div > h2 {
 }
 
 /* About part */
+
+.about-part a {
+    color: #5956FF;
+    transition: all 0.45s ease;
+}
+
+.about-part a:hover {
+    color: #0803E3;
+}
 
 .about-part {
     display: flex;
@@ -89,10 +98,6 @@ main > div > h2 {
     font-size: 30px;
 }
 
-.nuit-info a {
-    color: #5956FF;
-}
-
 .nuit-info-img {
     width: 750px;
     height: 100%;
@@ -116,10 +121,6 @@ main > div > h2 {
     row-gap: 50px;
 }
 
-.cgj a {
-   color: #5956FF;
-}
-
 .container-cgj-img {
     width: 750px;
     overflow: hidden;
@@ -134,4 +135,136 @@ main > div > h2 {
 }
 
 /* Work part */
+
+.avent-monde h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: auto;
+}
+
+.subtitle-content {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Projet aventurier monde */
+
+.avent-monde {
+    position: relative;
+    width: 100%;
+    height: 728px;
+    color: #6EE8F9;
+}
+
+.avent-monde::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.avent-monde > div:not(.bck-image-monde) {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.bck-image-monde {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("/ressources/aventurier-monde.jpg") fixed center;
+    background-size: cover;
+}
+
+.work-content {
+    display: flex;
+    margin-top: 150px;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.work-content p {
+    font-size: 25px;
+}
+
+.work-content > div {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 30%;
+}
+
+.work-content > div:first-child {
+    row-gap: 40px;
+}
+
+.work-content > div:first-child li > p {
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.work-content > div:nth-child(2) {
+    align-items: center;
+    row-gap: 40px;
+}
+
+.work-content img {
+    width: 64px;
+    padding: 2px;
+    border-radius: 50%;
+    height: 100%;
+    background: rgba(178, 204, 255, 0.5);
+    transition: all ease 0.5s;
+}
+
+.work-content img:hover {
+    transform: scale(1.25);
+}
+
+.work-content > div:last-child {
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn-biew-more {
+    position: relative;
+    margin-top: 150px;
+    width: 230px;
+    border-radius: 30px;
+    height: 64px;
+    background: #00CCFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.view-more-text {
+
+    color: white;
+    position: relative;
+    font-size: 25px;
+}
+
+.btn-biew-more::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 30px;
+    background: rgba(0,0,0,0.2);
+    transition: all ease 0.35s;
+}
+
+.btn-biew-more:hover::before {
+    width: 100%;
+}
 
