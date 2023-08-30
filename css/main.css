@@ -8,6 +8,10 @@ main {
  ALL PARTS
  */
 
+.l-margin {
+    margin-left: 83px;
+}
+
 main > div {
     margin: 205px 0 0 0px;
 }
@@ -216,10 +220,9 @@ main > div > h2 {
 
 .work-content img {
     width: 64px;
-    padding: 2px;
     border-radius: 50%;
     height: 100%;
-    background: rgba(178, 204, 255, 0.5);
+    background: rgb(2,2,82);
     transition: all ease 0.5s;
 }
 
@@ -232,7 +235,7 @@ main > div > h2 {
     justify-content: space-around;
 }
 
-.btn-biew-more {
+.btn-view-more {
     position: relative;
     margin-top: 150px;
     width: 230px;
@@ -246,13 +249,12 @@ main > div > h2 {
 }
 
 .view-more-text {
-
     color: white;
     position: relative;
     font-size: 25px;
 }
 
-.btn-biew-more::before {
+.btn-view-more::before {
     content: "";
     position: absolute;
     top: 0;
@@ -264,6 +266,49 @@ main > div > h2 {
     transition: all ease 0.35s;
 }
 
-.btn-biew-more:hover::before {
+.btn-view-more:hover::before {
     width: 100%;
+}
+
+/* Core skills parts */
+
+.container-tech {
+    margin-top: 64px;
+    display: flex;
+    position: relative;
+}
+
+.container-tech > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-right: -75px;
+    width: 206px;
+    height: 244px;
+    background: rgb(159,159,197);
+    border-radius: 25px;
+    box-shadow: -20px 0 25px rgba(0,0,0,0.2);
+    transition: ease all 0.2s;
+}
+
+.container-tech > div:hover {
+    margin-right: -10px;
+    rotate: 5deg;
+    transform: translateY(-10px);
+}
+
+.stars-tech {
+    display: flex;
+}
+
+.star {
+    width: 32px;
+    height: 32px;
+}
+
+.img-techno {
+    width: 96px;
+    height: 96px;
 }

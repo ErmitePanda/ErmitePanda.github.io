@@ -31,7 +31,7 @@ nav {
 /* Vérifier que les liens sont positionnés sinon
  la transition échoue */
 
-.link a::before {
+.link-nav a::before {
     content: "";
     position: absolute;
     border-bottom: black 1px solid;
@@ -40,7 +40,7 @@ nav {
     transition: all ease 0.35s;
 }
 
-.link a:hover::before {
+.link-nav a:hover::before {
     content: "";
     width: 100%;
 }
