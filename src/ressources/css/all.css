@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, serif;
+    text-decoration: none;
+}
+
+#cercle-transparent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    border: #713FDB 50px solid;
+    opacity: 0.1;
+    width: 900px;
+    height: 900px;
+    border-radius: 50%;
+}
