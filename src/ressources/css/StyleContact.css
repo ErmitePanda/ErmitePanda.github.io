@@ -1,0 +1,32 @@
+#titre-contact {
+    color: #713FDB;
+    font-size: 40px;
+    position: absolute;
+    top: 14vh;
+    left: 8vw;
+}
+
+.img {
+    width: 70px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    column-gap: 400px;
+    font-size: 20px;
+}
+
+main > div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 120px;
+}
+
+.container-contact {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
