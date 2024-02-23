@@ -12,6 +12,7 @@
 
 a {
     color: rgba(251,251,252,255);
+    font-family: Canva Sans, Noto Sans Variable, Noto Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -19,15 +20,85 @@ body {
     color: rgba(251,251,252,255);
 }
 
+header {
+    margin-top: 15px;
+    height: 30px;
+}
+
 nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
 }
+
+#conteneur-lien {
+    display: flex;
+    height: 100%;
+    width: 375px;
+    margin-right: 50px;
+}
+
+#conteneur-lien > div {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+#conteneur-lien > div > a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    transition: all 0.2s ease;
+    font-size: 20px;
+}
+
+#conteneur-lien > div > a:hover {
+    color: #12769E;
+    transform: scale(0.95);
+}
+
+#partiGaucheNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.visible {
+    opacity: 100%;
+    transition: all 0.2s ease;
+}
+
+.cachee {
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+.inexistant {
+    display: none;
+}
+
+.selectionner {
+    color: #D74728;
+}
+
+#vf, #ve {
+    width: 32px;
+}
+
+/* -_- */
 
 #easter-egg {
     width: 20px;
     height: 20px;
     border-radius: 50%;
+    margin-left: 30px;
 }
+
+
 
 .randomColor {
     background-color: var(--random-color);
