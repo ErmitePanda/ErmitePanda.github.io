@@ -68,7 +68,7 @@ nav {
 }
 
 .visible {
-    opacity: 100%;
+    opacity: 1;
     transition: all 0.2s ease;
 }
 
@@ -98,8 +98,14 @@ nav {
     margin-left: 30px;
 }
 
-
-
 .randomColor {
     background-color: var(--random-color);
+}
+
+main {
+    position: relative;
+}
+
+.block-main {
+    position: absolute;
 }
