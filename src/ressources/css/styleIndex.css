@@ -109,3 +109,16 @@ main {
 .block-main {
     position: absolute;
 }
+
+#soon {
+    background-color: rgba(29,30,34,255);
+    position: fixed;
+    width: 100vw;
+    height: 110%;
+    color: white;
+    z-index: 55;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50px);
+}
