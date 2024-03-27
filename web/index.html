@@ -3,31 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Accueil</title>
-    <link rel="stylesheet" href="../src/ressources/css/style.css">
+    <link rel="stylesheet" href="../src/ressources/css/styleIndex.css">
     <meta name="viewport" content="width=device-width">
+    <script src="../src/ressources/js/object/Diapositive.js" defer></script>
+    <script src="../src/ressources/js/scriptIndex.js" defer></script>
 </head>
 <body>
-<div id="cercle-transparent"></div>
+
 <header>
-    <h2><a href="index.html">Portfolio 2023</a></h2>
-    <div id="lien-header">
-        <div><a href="../src/Vue/VueAPropos.html">A propos</a></div>
-        <div><a href="../src/Vue/VueProjetProfessionel.html">Projets professionels</a></div>
-        <div><a href="#">Mes projets</a></div>
-        <div><a href="../src/Vue/VueContact.html">Contact</a></div>
-    </div>
+    <nav>
+        <div id="partiGaucheNav">
+            <div id="easter-egg"></div>
+            <img src="../src/ressources/img/france.png" alt="france" id="vf" class="visible">
+            <img src="../src/ressources/img/royaume-uni.png" alt="royaume-uni" id="ve" class="cachee inexistant">
+        </div>
+        
+        <div id="conteneur-lien">
+            <div><a class="selectionner" href="#">Accueil</a></div>
+            <div><a href="#">Projets</a></div>
+            <div><a href="#">Contact</a></div>
+        </div>
+    </nav>
 </header>
 
 <main>
-    <div>
-        <p>Bonjour à tous, je suis</p>
-        <h2>Théo DUBERNET</h2>
-        <div id="parti-bas">
-            <div id="etudiant">Etudiant en informatique</div>
-                <div id="bouton-contact"><a href="../src/Vue/VueContact.html">Me contacter</a></div>
+    <div id="accueil-content" class="block-main">
+        acceuil
+    </div>
+
+    <div id="projet-content" class="block-main">
+        <div id="box-projet">
+            projeta
         </div>
     </div>
-    <img id="image-accueil" src="../src/ressources/img/image-irl.png" alt="photo">
+
+    <div id="contact-content" class="block-main">
+        contact
+    </div>
 </main>
 </body>
 </html>
